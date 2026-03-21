@@ -10,6 +10,8 @@ public class Movement2 : MonoBehaviour
 
     [SerializeField] private LayerMask jumpableGround;
 
+    public CollectibleObjectManager com;
+
     // Start is called before the first frame update
     private void Start()
     {
@@ -36,4 +38,11 @@ public class Movement2 : MonoBehaviour
         return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, jumpableGround);
     }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("collectible object"))
+        {
+            com.ObjectCounter++;
+        }
+    }
 }
