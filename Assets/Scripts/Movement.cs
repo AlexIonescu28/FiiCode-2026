@@ -42,6 +42,7 @@ public class Movement : MonoBehaviour
     {
         if(other.gameObject.CompareTag("collectible object"))
         {
+            Destroy(other.gameObject);
             com.ObjectCounter ++;
         }
     }

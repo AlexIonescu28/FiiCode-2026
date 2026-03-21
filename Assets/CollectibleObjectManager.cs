@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class CollectibleObjectManager : MonoBehaviour
 {
     public int ObjectCounter;
+    public TextMeshProUGUI collectibleObjectText;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +17,6 @@ public class CollectibleObjectManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        collectibleObjectText.text = ObjectCounter.ToString();
     }
 }
