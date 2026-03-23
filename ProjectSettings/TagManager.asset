@@ -6,6 +6,7 @@ TagManager:
   tags:
   - player
   - collectible object
+  - Destroyable object
   layers:
   - Default
   - TransparentFX

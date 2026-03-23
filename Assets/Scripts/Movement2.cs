@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Net.NetworkInformation;
 using UnityEngine;
 
 public class Movement2 : MonoBehaviour
@@ -12,6 +14,10 @@ public class Movement2 : MonoBehaviour
 
     public CollectibleObjectManager com;
 
+
+    public GameObject attackPoint;
+    public float radius;
+    public LayerMask enemies;
     // Start is called before the first frame update
     private void Start()
     {
@@ -36,6 +42,13 @@ public class Movement2 : MonoBehaviour
     private bool GroundCheck()
     {
         return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, jumpableGround);
+    }
+
+
+    
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(attackPoint.transform.position, radius);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
