@@ -9,21 +9,21 @@ public class Movement2 : MonoBehaviour
     public Rigidbody2D myRigidbody;
     private SpriteRenderer sprite;
     private BoxCollider2D coll;
+    private Vector3 initialScale;
+
+    public bool isFacingRight = true;
 
     [SerializeField] private LayerMask jumpableGround;
 
     public CollectibleObjectManager com;
 
-
-    public GameObject attackPoint;
-    public float radius;
-    public LayerMask enemies;
     // Start is called before the first frame update
     private void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
         myRigidbody = GetComponent<Rigidbody2D>();
         coll = GetComponent<BoxCollider2D>();
+        initialScale = transform.localScale;
     }
 
     // Update is called once per frame
@@ -37,18 +37,13 @@ public class Movement2 : MonoBehaviour
         {
             myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, 7f);
         }
+
+        UpdateAnimationUpdate(directionX);
     }
 
     private bool GroundCheck()
     {
         return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, jumpableGround);
-    }
-
-
-    
-    private void OnDrawGizmos()
-    {
-        Gizmos.DrawWireSphere(attackPoint.transform.position, radius);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -57,6 +52,23 @@ public class Movement2 : MonoBehaviour
         {
             Destroy(other.gameObject);
             com.ObjectCounter++;
+        }
+    }
+
+    
+    private void UpdateAnimationUpdate(float dirx)
+    {
+        if (dirx > 0f)
+        {
+
+            transform.localScale = new Vector3(initialScale.x, initialScale.y, initialScale.z);
+            isFacingRight = true;
+        }
+        else if (dirx < 0f)
+        {
+
+            transform.localScale = new Vector3(-initialScale.x, initialScale.y, initialScale.z);
+            isFacingRight = false;
         }
     }
 }
