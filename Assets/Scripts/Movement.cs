@@ -10,6 +10,7 @@ public class Movement : MonoBehaviour
     private Vector3 initialScale;
     public bool isFacingRight = true;
     public CollectibleObjectManager com;
+    private bool canDoubleJump;
 
     [SerializeField] private LayerMask jumpableGround;
 
@@ -26,12 +27,30 @@ public class Movement : MonoBehaviour
     private void Update()
     {
         float directionX = Input.GetAxisRaw("Horizontal");
-
         myRigidbody.velocity = new Vector2(directionX * 7, myRigidbody.velocity.y);
 
-        if (Input.GetButtonDown("Jump") && GroundCheck())
+        
+        if (GroundCheck())
         {
-            myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, 7f);
+            canDoubleJump = true;
+        }
+
+      
+        if (Input.GetButtonDown("Jump"))
+        {
+            if (GroundCheck())
+            {
+              
+                myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, 7f);
+            }
+            else if (canDoubleJump)
+            {
+               
+                myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, 7f);
+
+               
+                canDoubleJump = false;
+            }
         }
 
         UpdateAnimationUpdate(directionX);

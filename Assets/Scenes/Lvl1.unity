@@ -1393,6 +1393,7 @@ GameObject:
   - component: {fileID: 1362621122}
   - component: {fileID: 1362621123}
   - component: {fileID: 1362621124}
+  - component: {fileID: 1362621125}
   m_Layer: 7
   m_Name: Player2
   m_TagString: player
@@ -1502,6 +1503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myRigidbody: {fileID: 0}
+  isFacingRight: 1
   jumpableGround:
     serializedVersion: 2
     m_Bits: 64
@@ -1549,6 +1551,22 @@ MonoBehaviour:
   enemies:
     serializedVersion: 2
     m_Bits: 256
+  destructibleObjects:
+    serializedVersion: 2
+    m_Bits: 0
+--- !u!114 &1362621125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362621118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8547e116888a954c9672722d592b7c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  otherRigidbody: {fileID: 2027471060}
 --- !u!1001 &1373623209
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1661,7 +1679,7 @@ GameObject:
   - component: {fileID: 1426639937}
   m_Layer: 8
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1770,6 +1788,7 @@ MonoBehaviour:
   pointB: {fileID: 830075489}
   enemyRigidBody: {fileID: 1426639935}
   speed: 4
+  isFacingRight: 1
 --- !u!61 &1426639937
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2173,6 +2192,7 @@ GameObject:
   - component: {fileID: 2027471060}
   - component: {fileID: 2027471064}
   - component: {fileID: 2027471065}
+  - component: {fileID: 2027471066}
   m_Layer: 7
   m_Name: Player1
   m_TagString: player
@@ -2281,6 +2301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myRigidbody: {fileID: 2027471060}
+  isFacingRight: 1
   com: {fileID: 323708067}
   jumpableGround:
     serializedVersion: 2
@@ -2311,6 +2332,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.685598, y: 2.8586566}
   m_EdgeRadius: 0
+--- !u!114 &2027471066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2027471059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8547e116888a954c9672722d592b7c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  otherRigidbody: {fileID: 1362621120}
 --- !u!1001 &177549397187174727
 PrefabInstance:
   m_ObjectHideFlags: 0
