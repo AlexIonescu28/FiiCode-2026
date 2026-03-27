@@ -32,7 +32,13 @@ public class Health : MonoBehaviour
             Die();
             RestartLevel();
         }
-       
+
+        if (collision.gameObject.CompareTag("Projectile"))
+        {
+            Die();
+            RestartLevel();
+        }
+
     }
 
     private void Die()
