@@ -8,6 +8,8 @@ TagManager:
   - collectible object
   - Destroyable object
   - Enemy
+  - Ground
+  - Projectile
   layers:
   - Default
   - TransparentFX
