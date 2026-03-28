@@ -10,6 +10,7 @@ TagManager:
   - Enemy
   - Ground
   - Projectile
+  - Trap
   layers:
   - Default
   - TransparentFX

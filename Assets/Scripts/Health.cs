@@ -22,10 +22,11 @@ public class Health : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        /*if (collision.gameObject.CompareTag("Trap"))
+        if (collision.gameObject.CompareTag("Trap"))
         {
             Die();
-        }*/
+            RestartLevel();
+        }
 
         if (collision.gameObject.CompareTag("Enemy"))
         {
