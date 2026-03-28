@@ -13,6 +13,7 @@ public class Movement : MonoBehaviour
     private bool canDoubleJump;
 
     [SerializeField] private LayerMask jumpableGround;
+    [SerializeField] private LayerMask jumpableObject;
 
     // Start is called before the first frame update
     private void Start()
@@ -58,7 +59,8 @@ public class Movement : MonoBehaviour
 
     private bool GroundCheck()
     {
-        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, jumpableGround);
+        
+        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, jumpableGround | jumpableObject);
     }
 
     private void OnTriggerEnter2D(Collider2D other)

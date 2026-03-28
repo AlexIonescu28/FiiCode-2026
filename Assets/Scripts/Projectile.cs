@@ -21,7 +21,7 @@ public class Projectile : MonoBehaviour
        
         
 
-        if (collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Destroyable object"))
+        if (collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Destroyable object") || collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Trap"))
         {
             Destroy(gameObject);
         }

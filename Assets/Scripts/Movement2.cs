@@ -14,6 +14,7 @@ public class Movement2 : MonoBehaviour
     public bool isFacingRight = true;
 
     [SerializeField] private LayerMask jumpableGround;
+    [SerializeField] private LayerMask jumpableObject;
 
     public CollectibleObjectManager com;
 
@@ -43,7 +44,8 @@ public class Movement2 : MonoBehaviour
 
     private bool GroundCheck()
     {
-        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, jumpableGround);
+
+        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, jumpableGround | jumpableObject);
     }
 
     private void OnTriggerEnter2D(Collider2D other)

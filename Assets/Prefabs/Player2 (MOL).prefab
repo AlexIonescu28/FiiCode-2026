@@ -128,6 +128,9 @@ MonoBehaviour:
   jumpableGround:
     serializedVersion: 2
     m_Bits: 64
+  jumpableObject:
+    serializedVersion: 2
+    m_Bits: 512
   com: {fileID: 4693245572234189120, guid: 133db7c68cbfdf84cbe0403736f51423, type: 3}
 --- !u!61 &2033519414022829616
 BoxCollider2D:

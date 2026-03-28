@@ -44,20 +44,20 @@ public class Health : MonoBehaviour
 
     private void Die()
     {
-
-        myRigidbody.bodyType = RigidbodyType2D.Static;
+        
+        //myRigidbody.bodyType = RigidbodyType2D.Static;
 
         if (myRigidbody.gameObject.name == "Player1")
         {
             myRigidbody.GetComponent<Movement>().enabled = false;
         }
-        else if (otherRigidbody.gameObject.name == "Player2")
+        else if (myRigidbody.gameObject.name == "Player2") 
         {
-
             myRigidbody.GetComponent<Movement2>().enabled = false;
         }
 
-        otherRigidbody.bodyType = RigidbodyType2D.Static;
+       
+        //otherRigidbody.bodyType = RigidbodyType2D.Static;
 
         if (otherRigidbody.gameObject.name == "Player1")
         {
@@ -65,10 +65,10 @@ public class Health : MonoBehaviour
         }
         else if (otherRigidbody.gameObject.name == "Player2")
         {
-            
             otherRigidbody.GetComponent<Movement2>().enabled = false;
         }
-        //anim.SetTrigger("death"); Linia asta de cod o sa ne ajute dupa ce vom avea animatii
+
+        // anim.SetTrigger("death"); 
     }
 
     private void RestartLevel()
