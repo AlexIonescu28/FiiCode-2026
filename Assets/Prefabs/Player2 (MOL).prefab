@@ -123,12 +123,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa73a8aa487949a4faec1765b54c8ae6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myRigidbody: {fileID: 0}
+  myRigidbody: {fileID: 2033519414022829619}
   isFacingRight: 1
   jumpableGround:
     serializedVersion: 2
     m_Bits: 64
-  com: {fileID: 0}
+  com: {fileID: 4693245572234189120, guid: 133db7c68cbfdf84cbe0403736f51423, type: 3}
 --- !u!61 &2033519414022829616
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -174,7 +174,7 @@ MonoBehaviour:
     m_Bits: 256
   destructibleObjects:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
 --- !u!114 &2033519414022829622
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -187,7 +187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8547e116888a954c9672722d592b7c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  otherRigidbody: {fileID: 0}
+  otherRigidbody: {fileID: 2808145907035424680, guid: 67b2b182463066747bc3acc5bd857f46, type: 3}
 --- !u!1 &2033519415455888957
 GameObject:
   m_ObjectHideFlags: 0

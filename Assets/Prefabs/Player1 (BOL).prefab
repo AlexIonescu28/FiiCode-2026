@@ -123,7 +123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myRigidbody: {fileID: 2808145907035424680}
   isFacingRight: 1
-  com: {fileID: 0}
+  com: {fileID: 4693245572234189120, guid: 133db7c68cbfdf84cbe0403736f51423, type: 3}
   jumpableGround:
     serializedVersion: 2
     m_Bits: 64
@@ -165,4 +165,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8547e116888a954c9672722d592b7c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  otherRigidbody: {fileID: 0}
+  otherRigidbody: {fileID: 2033519414022829619, guid: b14a66aa50799754e88be1bd849480a7, type: 3}

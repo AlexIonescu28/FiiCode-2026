@@ -13,7 +13,7 @@ public class CollectibleObjectManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        ObjectCounter = 0;
     }
 
     // Update is called once per frame

@@ -21,10 +21,10 @@ public class FinishScript : MonoBehaviour
     {
         if (collision.CompareTag("player"))
         {
-            int indexCurent = SceneManager.GetActiveScene().buildIndex;
+           
 
             
-            SceneManager.LoadSceneAsync(indexCurent + 1);
+            SceneManager.LoadSceneAsync(1);
         }
     }
 }

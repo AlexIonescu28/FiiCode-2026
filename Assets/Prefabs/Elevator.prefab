@@ -126,4 +126,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elavatorTop: {fileID: 7368051098749891479}
   destinationTop: {fileID: 0}
-  speed: 1.2
+  speed: 1.5
