@@ -1670,6 +1670,10 @@ PrefabInstance:
       propertyPath: com
       value: 
       objectReference: {fileID: 323708067}
+    - target: {fileID: 2808145907035424676, guid: 67b2b182463066747bc3acc5bd857f46, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2808145907035424678, guid: 67b2b182463066747bc3acc5bd857f46, type: 3}
       propertyPath: otherRigidbody
       value: 

@@ -51,7 +51,7 @@ public class ButtonLogic : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("player"))
+        if(collision.CompareTag("player") || collision.CompareTag("Destroyable object"))
         {
             isPressed = true;
             collisionCount++;
@@ -61,7 +61,7 @@ public class ButtonLogic : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("player"))
+        if (collision.CompareTag("player") || collision.CompareTag("Destroyable object"))
         {
             collisionCount--;
             if(collisionCount == 0)
