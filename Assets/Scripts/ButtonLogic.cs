@@ -61,7 +61,7 @@ public class ButtonLogic : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("player") || collision.CompareTag("Destroyable object"))
+        if (collision.CompareTag("player") || collision.CompareTag("Destroyable object") || collision.CompareTag("Trap"))
         {
             collisionCount--;
             if(collisionCount == 0)

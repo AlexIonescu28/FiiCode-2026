@@ -9,4 +9,16 @@ public class LogicManager : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(1);
     }
+
+    public void Tutorial()
+    {
+        SceneManager.LoadSceneAsync(12);
+    }
+
+    public void Menu()
+    {
+        SceneManager.LoadSceneAsync(0);
+    }
+
+
 }
