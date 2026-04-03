@@ -18,18 +18,7 @@ public class timer : MonoBehaviour
         int seconds= Mathf.FloorToInt(elapsedTime%60);
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
-    public void SaveBestTime(string levelName)
-    {
-        finalTime = elapsedTime;
-
-        float best = PlayerPrefs.GetFloat(levelName + "_BestTime", float.MaxValue);
-
-        if (finalTime < best)
-        {
-            PlayerPrefs.SetFloat(levelName + "_BestTime", finalTime);
-            PlayerPrefs.Save();
-        }
-    }
+   
 
 
 }
