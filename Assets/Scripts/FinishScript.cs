@@ -49,7 +49,7 @@ public class FinishScript : MonoBehaviour
 
         if(firstFinish==true && secondFinish==true)
         {
-            FindObjectOfType<timer>().SaveBestTime("Lvl1");
+            FindObjectOfType<timer>().SaveBestTime(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
             SceneManager.LoadSceneAsync(1);
             enabled = false;
         }
