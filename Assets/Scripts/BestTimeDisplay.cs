@@ -19,7 +19,7 @@ public class BestTimeDisplay : MonoBehaviour
             int minutes = Mathf.FloorToInt(best / 60);
             int seconds = Mathf.FloorToInt(best % 60);
 
-            bestTimeText.text = string.Format("Best Time: {0:00}:{1:00}", minutes, seconds);
+            bestTimeText.text = string.Format(levelName+" Best Time: {0:00}:{1:00}", minutes, seconds);
         }
     }
 }
