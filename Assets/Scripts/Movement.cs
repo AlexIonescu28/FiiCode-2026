@@ -60,9 +60,13 @@ public class Movement : MonoBehaviour
     private bool GroundCheck()
     {
         
-        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, jumpableGround | jumpableObject);
-    }
+        Vector2 origin = new Vector2(coll.bounds.center.x, coll.bounds.min.y);
 
+        Vector2 boxSize = new Vector2(coll.bounds.size.x * 0.9f, 0.1f);
+
+     
+        return Physics2D.BoxCast(origin, boxSize, 0f, Vector2.down, 0.1f, jumpableGround | jumpableObject);
+    }
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.CompareTag("collectible object"))
