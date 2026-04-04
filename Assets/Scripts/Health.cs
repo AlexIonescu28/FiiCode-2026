@@ -11,7 +11,8 @@ public class Health : MonoBehaviour
     void Start()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
-        
+       
+
     }
 
     // Update is called once per frame
