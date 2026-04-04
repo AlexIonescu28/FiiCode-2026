@@ -28,7 +28,7 @@ public class Movement : MonoBehaviour
     private void Update()
     {
         float directionX = Input.GetAxisRaw("Horizontal");
-        myRigidbody.velocity = new Vector2(directionX * 7, myRigidbody.velocity.y);
+        myRigidbody.linearVelocity = new Vector2(directionX * 7, myRigidbody.linearVelocity.y);
 
         
         if (GroundCheck())
@@ -42,12 +42,12 @@ public class Movement : MonoBehaviour
             if (GroundCheck())
             {
               
-                myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, 7f);
+                myRigidbody.linearVelocity = new Vector2(myRigidbody.linearVelocity.x, 7f);
             }
             else if (canDoubleJump)
             {
                
-                myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, 7f);
+                myRigidbody.linearVelocity = new Vector2(myRigidbody.linearVelocity.x, 7f);
 
                
                 canDoubleJump = false;

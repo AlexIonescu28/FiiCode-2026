@@ -25,11 +25,11 @@ public class PatrolScript : MonoBehaviour
         Vector2 point = currentPosition.position - transform.position;
         if(currentPosition==pointB.transform)
         {
-            enemyRigidBody.velocity = new Vector2(speed,0);
+            enemyRigidBody.linearVelocity = new Vector2(speed,0);
         }
         else
         {
-            enemyRigidBody.velocity = new Vector2(-speed, 0);
+            enemyRigidBody.linearVelocity = new Vector2(-speed, 0);
         }
 
         if(Vector2.Distance(transform.position,currentPosition.position) < 0.5f && currentPosition==pointB.transform)
