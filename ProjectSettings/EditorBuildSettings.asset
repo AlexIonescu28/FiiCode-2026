@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tutorial.unity
     guid: 31159e076d3f64442bdead45e2f71ed7
+  - enabled: 1
+    path: Assets/Scenes/RecordTime.unity
+    guid: afdcad9765892404aa5da6520136395e
   m_configObjects: {}

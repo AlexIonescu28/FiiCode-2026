@@ -1779,9 +1779,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: LogicManager, Assembly-CSharp
-        m_MethodName: Menu
+      - m_Target: {fileID: 1874244963}
+        m_TargetAssemblyTypeName: highscoreButton, Assembly-CSharp
+        m_MethodName: RecordTime
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

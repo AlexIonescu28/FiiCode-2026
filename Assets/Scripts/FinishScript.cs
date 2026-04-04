@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -48,8 +49,9 @@ public class FinishScript : MonoBehaviour
 
         if(firstFinish==true && secondFinish==true)
         {
-            SceneManager.LoadSceneAsync(1);
             FindObjectOfType<timer>().SaveBestTime("Lvl1");
+            SceneManager.LoadSceneAsync(1);
+            enabled = false;
         }
     }
 }

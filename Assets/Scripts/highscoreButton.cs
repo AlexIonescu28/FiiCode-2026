@@ -13,8 +13,8 @@ public class highscoreButton : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void RecordTime()
     {
-        
+        SceneManager.LoadSceneAsync(13);
     }
 }
