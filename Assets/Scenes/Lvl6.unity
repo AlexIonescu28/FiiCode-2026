@@ -250,6 +250,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4250348064270891538, guid: 7c88cbcb957d5df4aa854a63752a59bd, type: 3}
   m_PrefabInstance: {fileID: 198123110}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &198123113 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6266461969380780708, guid: 7c88cbcb957d5df4aa854a63752a59bd, type: 3}
+  m_PrefabInstance: {fileID: 198123110}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Slider
 --- !u!1 &637270874
 GameObject:
   m_ObjectHideFlags: 0
@@ -350,6 +361,7 @@ RectTransform:
   - {fileID: 1009028853}
   - {fileID: 1619777487}
   - {fileID: 198123112}
+  - {fileID: 1358617522}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -383,6 +395,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::pauseMenu
   pauseMenuUI: {fileID: 198123111}
+  volumeSlider: {fileID: 198123113}
+  audioManager: {fileID: 1358617521}
 --- !u!1 &1009028852
 GameObject:
   m_ObjectHideFlags: 0
@@ -520,6 +534,79 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1009028852}
   m_CullTransparentMesh: 1
+--- !u!1001 &1358617520
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 637270878}
+    m_Modifications:
+    - target: {fileID: 416598655446670950, guid: 869703a58b3e5204e88b631de5f67626, type: 3}
+      propertyPath: m_Name
+      value: Audio Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7949161286327290631, guid: 869703a58b3e5204e88b631de5f67626, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 54.142517
+      objectReference: {fileID: 0}
+    - target: {fileID: 7949161286327290631, guid: 869703a58b3e5204e88b631de5f67626, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 39.473145
+      objectReference: {fileID: 0}
+    - target: {fileID: 7949161286327290631, guid: 869703a58b3e5204e88b631de5f67626, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7949161286327290631, guid: 869703a58b3e5204e88b631de5f67626, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7949161286327290631, guid: 869703a58b3e5204e88b631de5f67626, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7949161286327290631, guid: 869703a58b3e5204e88b631de5f67626, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7949161286327290631, guid: 869703a58b3e5204e88b631de5f67626, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7949161286327290631, guid: 869703a58b3e5204e88b631de5f67626, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7949161286327290631, guid: 869703a58b3e5204e88b631de5f67626, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7949161286327290631, guid: 869703a58b3e5204e88b631de5f67626, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 869703a58b3e5204e88b631de5f67626, type: 3}
+--- !u!114 &1358617521 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 625101903086952259, guid: 869703a58b3e5204e88b631de5f67626, type: 3}
+  m_PrefabInstance: {fileID: 1358617520}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24b36f61026fa944da22a09921ac748d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioManager
+--- !u!4 &1358617522 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7949161286327290631, guid: 869703a58b3e5204e88b631de5f67626, type: 3}
+  m_PrefabInstance: {fileID: 1358617520}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1367769490
 GameObject:
   m_ObjectHideFlags: 0
