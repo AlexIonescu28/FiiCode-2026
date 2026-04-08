@@ -228,6 +228,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5319116660376937820, guid: 7c88cbcb957d5df4aa854a63752a59bd, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 2e-10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5319116660376937820, guid: 7c88cbcb957d5df4aa854a63752a59bd, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5319116660376937820, guid: 7c88cbcb957d5df4aa854a63752a59bd, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 2e-10
+      objectReference: {fileID: 0}
     - target: {fileID: 6266461969380780708, guid: 7c88cbcb957d5df4aa854a63752a59bd, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -244,9 +256,21 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: QuitGame
       objectReference: {fileID: 0}
+    - target: {fileID: 7414295154691254994, guid: 7c88cbcb957d5df4aa854a63752a59bd, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 2e-10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7414295154691254994, guid: 7c88cbcb957d5df4aa854a63752a59bd, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8927316621628626588, guid: 7c88cbcb957d5df4aa854a63752a59bd, type: 3}
       propertyPath: m_Name
       value: PauseMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927316621628626588, guid: 7c88cbcb957d5df4aa854a63752a59bd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
