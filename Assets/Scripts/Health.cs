@@ -40,7 +40,11 @@ public class Health : MonoBehaviour
             Die();
             RestartLevel();
         }
-
+        if (collision.gameObject.CompareTag("boss"))
+        {
+            Die();
+            RestartLevel();
+        }
     }
 
     private void Die()

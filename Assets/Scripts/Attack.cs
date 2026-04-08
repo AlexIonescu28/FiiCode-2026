@@ -8,6 +8,7 @@ public class Attack : MonoBehaviour
     public float radius;
     public LayerMask enemies;
     public LayerMask destructibleObjects;
+    public LayerMask bossLayer;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +29,7 @@ public class Attack : MonoBehaviour
     {
         Collider2D[] taged = Physics2D.OverlapCircleAll(attackPoint.position, radius, enemies);
         Collider2D[] destroyed = Physics2D.OverlapCircleAll(attackPoint.position, radius, destructibleObjects);
-
+        Collider2D[] bosses = Physics2D.OverlapCircleAll(attackPoint.position, radius, bossLayer);
         foreach (Collider2D enemy in taged)
         {
             Destroy(enemy.gameObject);
@@ -45,7 +46,16 @@ public class Attack : MonoBehaviour
             Debug.Log("Obiectul " + objects.name + " a fost distrus instantaneu!");
         }
 
+        foreach (Collider2D boss in bosses)
+        {
+            bossHP hp = boss.GetComponent<bossHP>();
 
+            if (hp != null)
+            {
+                hp.TakeDamage(1);
+                UnityEngine.Debug.Log("Ai lovit boss-ul!");
+            }
+        }
 
     }
 
