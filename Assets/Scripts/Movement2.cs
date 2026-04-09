@@ -8,7 +8,7 @@ public class Movement2 : MonoBehaviour
 {
     public Rigidbody2D myRigidbody;
     private SpriteRenderer sprite;
-    private BoxCollider2D coll;
+    private CircleCollider2D coll;
     private Vector3 initialScale;
 
     public bool isFacingRight = true;
@@ -23,7 +23,7 @@ public class Movement2 : MonoBehaviour
     {
         sprite = GetComponent<SpriteRenderer>();
         myRigidbody = GetComponent<Rigidbody2D>();
-        coll = GetComponent<BoxCollider2D>();
+        coll = GetComponent<CircleCollider2D>();
         initialScale = transform.localScale;
     }
 
