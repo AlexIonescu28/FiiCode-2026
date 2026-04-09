@@ -543,6 +543,7 @@ GameObject:
   m_Component:
   - component: {fileID: 776106900}
   - component: {fileID: 776106901}
+  - component: {fileID: 776106902}
   m_Layer: 5
   m_Name: Health bar
   m_TagString: Untagged
@@ -568,8 +569,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -24.1381, y: 8.896395}
-  m_SizeDelta: {x: 672.474, y: 70.9221}
+  m_AnchoredPosition: {x: -22.9876, y: 6.0201}
+  m_SizeDelta: {x: 670.173, y: 65.1695}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &776106901
 MonoBehaviour:
@@ -622,6 +623,19 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &776106902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776106899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbda5b83199baee45bcb3e27d208fba1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  slider: {fileID: 776106901}
 --- !u!1001 &805015285
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -765,7 +779,7 @@ Transform:
   m_GameObject: {fileID: 963480913}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.99989253, w: -0.014660013}
-  m_LocalPosition: {x: -10.85, y: -5.25, z: 0}
+  m_LocalPosition: {x: -4.65, y: -5.25, z: 0}
   m_LocalScale: {x: 0.03202164, y: 0.02879828, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -801,7 +815,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -821,6 +835,7 @@ GameObject:
   - component: {fileID: 976179213}
   - component: {fileID: 976179218}
   - component: {fileID: 976179217}
+  - component: {fileID: 976179219}
   m_Layer: 10
   m_Name: Boss big so I can see
   m_TagString: boss
@@ -1020,6 +1035,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &976179219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976179212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 360cfefcc0dc2464f81391ae04d40896, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  maxHealth: 3
+  currentHealth: 0
+  healthBar: {fileID: 776106902}
+  isVulnerable: 0
 --- !u!1001 &1030116794
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2147,6 +2178,10 @@ PrefabInstance:
     - target: {fileID: 2033519414022829623, guid: b14a66aa50799754e88be1bd849480a7, type: 3}
       propertyPath: enemies.m_Bits
       value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 2033519414022829623, guid: b14a66aa50799754e88be1bd849480a7, type: 3}
+      propertyPath: bossLayer.m_Bits
+      value: 1024
       objectReference: {fileID: 0}
     - target: {fileID: 2033519414022829645, guid: b14a66aa50799754e88be1bd849480a7, type: 3}
       propertyPath: m_Name

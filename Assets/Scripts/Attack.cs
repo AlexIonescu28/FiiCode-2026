@@ -29,7 +29,7 @@ public class Attack : MonoBehaviour
     {
         Collider2D[] taged = Physics2D.OverlapCircleAll(attackPoint.position, radius, enemies);
         Collider2D[] destroyed = Physics2D.OverlapCircleAll(attackPoint.position, radius, destructibleObjects);
-        Collider2D[] bosses = Physics2D.OverlapCircleAll(attackPoint.position, radius, bossLayer);
+        Collider2D[] hits = Physics2D.OverlapCircleAll(attackPoint.position, radius);
         foreach (Collider2D enemy in taged)
         {
             Destroy(enemy.gameObject);
@@ -46,7 +46,18 @@ public class Attack : MonoBehaviour
             Debug.Log("Obiectul " + objects.name + " a fost distrus instantaneu!");
         }
 
-        
+        foreach (Collider2D hit in hits)
+        {
+            if (hit.CompareTag("boss")) // exact cum apare în Inspector
+            {
+                BossHealth bh = hit.GetComponent<BossHealth>();
+                if (bh != null)
+                {
+                    bh.TakeDamage(1);
+                    Debug.Log("Boss-ul a primit damage!");
+                }
+            }
+        }
 
     }
 
