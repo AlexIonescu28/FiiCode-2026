@@ -46,16 +46,7 @@ public class Attack : MonoBehaviour
             Debug.Log("Obiectul " + objects.name + " a fost distrus instantaneu!");
         }
 
-        foreach (Collider2D boss in bosses)
-        {
-            bossHP hp = boss.GetComponent<bossHP>();
-
-            if (hp != null)
-            {
-                hp.TakeDamage(1);
-                UnityEngine.Debug.Log("Ai lovit boss-ul!");
-            }
-        }
+        
 
     }
 
