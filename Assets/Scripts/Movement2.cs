@@ -32,11 +32,12 @@ public class Movement2 : MonoBehaviour
     {
         float directionX = Input.GetAxisRaw("Horizontal2");
 
-        myRigidbody.linearVelocity = new Vector2(directionX * 7, myRigidbody.linearVelocity.y);
+        myRigidbody.linearVelocity = new Vector2(directionX * 4, myRigidbody.linearVelocity.y);
 
         if (Input.GetButtonDown("Jump2") && GroundCheck())
         {
-            myRigidbody.linearVelocity = new Vector2(myRigidbody.linearVelocity.x, 7f);
+            myRigidbody.linearVelocity = new Vector2(myRigidbody.linearVelocity.x, 5f);
+            myRigidbody.linearVelocity = new Vector2(myRigidbody.linearVelocity.x, 5f);
         }
 
         UpdateAnimationUpdate(directionX);

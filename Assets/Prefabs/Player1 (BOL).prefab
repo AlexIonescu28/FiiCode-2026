@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2808145907035424680}
   - component: {fileID: 2808145907035424676}
   - component: {fileID: 2808145907035424678}
-  - component: {fileID: 7227640218031828977}
+  - component: {fileID: 707624351291361145}
   m_Layer: 7
   m_Name: Player1 (BOL)
   m_TagString: player
@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   otherRigidbody: {fileID: 2033519414022829619, guid: b14a66aa50799754e88be1bd849480a7, type: 3}
---- !u!58 &7227640218031828977
+--- !u!58 &707624351291361145
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -190,5 +190,5 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.104105294, y: -0.1575391}
-  m_Radius: 0.6802555
+  m_Offset: {x: -0.1014347, y: -0.112420164}
+  m_Radius: 0.638727
