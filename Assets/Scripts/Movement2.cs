@@ -36,8 +36,8 @@ public class Movement2 : MonoBehaviour
 
         if (Input.GetButtonDown("Jump2") && GroundCheck())
         {
-            myRigidbody.linearVelocity = new Vector2(myRigidbody.linearVelocity.x, 5f);
-            myRigidbody.linearVelocity = new Vector2(myRigidbody.linearVelocity.x, 5f);
+            myRigidbody.linearVelocity = new Vector2(myRigidbody.linearVelocity.x, 4f);
+            myRigidbody.linearVelocity = new Vector2(myRigidbody.linearVelocity.x, 4f);
         }
 
         UpdateAnimationUpdate(directionX);
