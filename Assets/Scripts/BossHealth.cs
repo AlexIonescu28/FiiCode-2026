@@ -9,10 +9,13 @@ public class BossHealth : MonoBehaviour
 
     public HealthBar healthBar;
 
-    public bool isVulnerable = false;
+    public bool isVulnerable = false;      // poate fi lovit DOAR când e true
+    public float postHitStunTime = 10f;    // timp de invulnerabilitate după ce e lovit
 
     private PatrolScript patrol;
     private Rigidbody2D rb;
+
+    private bool isInPostHitStun = false;  // boss-ul a fost lovit și e în cooldown
 
     void Start()
     {
@@ -37,7 +40,6 @@ public class BossHealth : MonoBehaviour
 
     IEnumerator StunBoss(float duration)
     {
-        // Oprim mișcarea
         if (patrol != null)
             patrol.enabled = false;
 
@@ -46,7 +48,6 @@ public class BossHealth : MonoBehaviour
 
         yield return new WaitForSeconds(duration);
 
-        // Repornim mișcarea
         if (patrol != null)
             patrol.enabled = true;
 
@@ -55,15 +56,33 @@ public class BossHealth : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        if (!isVulnerable)
+        // NU poate fi lovit dacă:
+        // - nu este vulnerabil
+        // - este în cooldown după ce a fost lovit
+        if (!isVulnerable || isInPostHitStun)
             return;
 
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
 
+        // pornește cooldown-ul de invulnerabilitate
+        StartCoroutine(PostHitStun(postHitStunTime));
+
         if (currentHealth <= 0)
         {
             Destroy(gameObject);
         }
+    }
+
+    IEnumerator PostHitStun(float duration)
+    {
+        isInPostHitStun = true;
+        isVulnerable = false; // nu mai poate fi lovit în acest timp
+
+        yield return new WaitForSeconds(duration);
+
+        isInPostHitStun = false;
+        // vulnerabilitatea NU se reactivează automat
+        // doar trap-ul îl face vulnerabil din nou
     }
 }

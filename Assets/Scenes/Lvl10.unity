@@ -665,7 +665,7 @@ GameObject:
   - component: {fileID: 880473189}
   m_Layer: 0
   m_Name: Boss
-  m_TagString: Untagged
+  m_TagString: boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -857,10 +857,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 360cfefcc0dc2464f81391ae04d40896, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossHealth
-  maxHealth: 100
+  maxHealth: 3
   currentHealth: 0
   healthBar: {fileID: 776106902}
   isVulnerable: 0
+  postHitStunTime: 10
 --- !u!114 &880473190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -964,7 +965,7 @@ Transform:
   m_GameObject: {fileID: 963480913}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.99989253, w: -0.014660013}
-  m_LocalPosition: {x: -3.4, y: 5.71, z: 0}
+  m_LocalPosition: {x: -7.47, y: -3.87, z: 0}
   m_LocalScale: {x: 0.03202164, y: 0.02879828, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
