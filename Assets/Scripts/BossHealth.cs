@@ -17,7 +17,7 @@ public class BossHealth : MonoBehaviour
     public BossHitEvents bossHitEvents;
 
     private bool isInPostHitStun = false;  // boss-ul a fost lovit și e în cooldown
-
+    public GameObject objectToSpawnOnDeath;
     void Start()
     {
         currentHealth = maxHealth;
@@ -57,26 +57,24 @@ public class BossHealth : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        // poate fi lovit doar dacă este vulnerabil
         if (!isVulnerable)
             return;
 
-        // scade viața
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
 
-        // declanșează evenimentul de hit (1, 2, 3)
         if (bossHitEvents != null)
             bossHitEvents.RegisterHit();
 
-        // devine invincibil imediat după lovitură
         StartCoroutine(PostHitStun(postHitStunTime));
 
-        // NU mai este vulnerabil după lovitură
         isVulnerable = false;
 
         if (currentHealth <= 0)
         {
+            if (objectToSpawnOnDeath != null)
+                Instantiate(objectToSpawnOnDeath, transform.position, Quaternion.identity);
+
             Destroy(gameObject);
         }
     }
