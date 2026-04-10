@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2808145907035424676}
   - component: {fileID: 2808145907035424678}
   - component: {fileID: 707624351291361145}
+  - component: {fileID: 8259198378857988504}
   m_Layer: 7
   m_Name: Player1 (BOL)
   m_TagString: player
@@ -137,6 +138,7 @@ MonoBehaviour:
   myRigidbody: {fileID: 2808145907035424680}
   isFacingRight: 1
   com: {fileID: 4693245572234189120, guid: 133db7c68cbfdf84cbe0403736f51423, type: 3}
+  animator: {fileID: 8259198378857988504}
   jumpableGround:
     serializedVersion: 2
     m_Bits: 64
@@ -192,3 +194,25 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: -0.1014347, y: -0.112420164}
   m_Radius: 0.638727
+--- !u!95 &8259198378857988504
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2808145907035424687}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cb8c1b83473141942a7ef514212a0ea1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
