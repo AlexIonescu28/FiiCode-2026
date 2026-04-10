@@ -12,6 +12,9 @@ TagManager:
   - Projectile
   - Trap
   - boss
+  - BossDestructibleObject
+  - BossDestructibleObject3
+  - BossDestructibleObject2
   layers:
   - Default
   - TransparentFX
