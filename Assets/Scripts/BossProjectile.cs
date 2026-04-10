@@ -20,7 +20,7 @@ public class BossProjectile : MonoBehaviour
         if (rb != null)
         {
             // proiectilul merge în sus
-            rb.velocity = Vector2.up * speed;
+            rb.linearVelocity = Vector2.up * speed;
         }
 
         // se distruge automat după un timp
