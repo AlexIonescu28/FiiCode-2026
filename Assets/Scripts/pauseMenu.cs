@@ -15,11 +15,11 @@ public class pauseMenu : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        // slider-ul pornește cu volumul salvat
+       
         float savedVolume = PlayerPrefs.GetFloat("MusicVolume", 0.4f);
         volumeSlider.value = savedVolume;
 
-        // conectează slider-ul la funcția de volum
+       
         volumeSlider.onValueChanged.AddListener(audioManager.SetMusicVolume);
 
     }

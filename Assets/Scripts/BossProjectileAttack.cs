@@ -3,10 +3,10 @@
 public class BossProjectileAttack : MonoBehaviour
 {
     [Header("Projectile Settings")]
-    public GameObject projectilePrefab;   // proiectilul tău
-    public Transform firePoint;           // locul de unde se aruncă proiectilul
-    public float projectileSpeed = 10f;   // viteza în sus
-    public float fireInterval = 2f;       // cât de des aruncă
+    public GameObject projectilePrefab;   
+    public Transform firePoint;           
+    public float projectileSpeed = 10f;   
+    public float fireInterval = 2f;      
 
     private float fireTimer = 0f;
 
@@ -26,10 +26,10 @@ public class BossProjectileAttack : MonoBehaviour
         if (projectilePrefab == null || firePoint == null)
             return;
 
-        // instanțiem proiectilul
+       
         GameObject proj = Instantiate(projectilePrefab, firePoint.position, Quaternion.identity);
 
-        // îi dăm viteză în sus
+      
         Rigidbody2D rb = proj.GetComponent<Rigidbody2D>();
         if (rb != null)
         {

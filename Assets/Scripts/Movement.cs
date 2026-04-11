@@ -44,7 +44,7 @@ public class Movement : MonoBehaviour
             if (GroundCheck())
             {
                 myRigidbody.linearVelocity = new Vector2(myRigidbody.linearVelocity.x, 4.5f);
-                animator.SetBool("IsJumping", true);
+                //animator.SetBool("IsJumping", true);
             }
             else if (canDoubleJump)
             {

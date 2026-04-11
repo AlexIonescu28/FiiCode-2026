@@ -20,5 +20,6 @@ public class LogicManager : MonoBehaviour
         SceneManager.LoadSceneAsync(0);
     }
 
+    
 
 }

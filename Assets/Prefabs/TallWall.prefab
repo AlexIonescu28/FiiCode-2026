@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1009642158187743682}
   - component: {fileID: 1009642158187743680}
   - component: {fileID: 1009642158187743681}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TallWall
   m_TagString: Ground
   m_Icon: {fileID: 0}

@@ -32,18 +32,16 @@ public class Movement2 : MonoBehaviour
     private void Update()
     {
         float directionX = Input.GetAxisRaw("Horizontal2");
-
         myRigidbody.linearVelocity = new Vector2(directionX * 4, myRigidbody.linearVelocity.y);
         animator2.SetFloat("Speed2", Mathf.Abs(myRigidbody.linearVelocity.x));
+
         if (Input.GetButtonDown("Jump2") && GroundCheck())
         {
+         
             myRigidbody.linearVelocity = new Vector2(myRigidbody.linearVelocity.x, 4f);
-            myRigidbody.linearVelocity = new Vector2(myRigidbody.linearVelocity.x, 4f);
-            animator2.SetBool("IsJumping2", true);
-        }
-        else
-        {
-            animator2.SetBool("IsJumping2", false);
+
+            
+            StartCoroutine(JumpAnimationRoutine());
         }
 
         UpdateAnimationUpdate(directionX);
@@ -79,5 +77,15 @@ public class Movement2 : MonoBehaviour
             transform.localScale = new Vector3(-initialScale.x, initialScale.y, initialScale.z);
             isFacingRight = false;
         }
+    }
+
+    private IEnumerator JumpAnimationRoutine()
+    {
+        animator2.SetBool("IsJumping2", true);
+
+        // Așteptăm 0.5 secunde
+        yield return new WaitForSeconds(0.5f);
+
+        animator2.SetBool("IsJumping2", false);
     }
 }

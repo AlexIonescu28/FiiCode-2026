@@ -11,7 +11,7 @@ public class AudioManager : MonoBehaviour
         musicSource.clip = background;
         musicSource.Play();
 
-        // încarc? volumul salvat
+     
         float savedVolume = PlayerPrefs.GetFloat("MusicVolume", 0.5f);
         musicSource.volume = savedVolume;
     }
@@ -20,7 +20,7 @@ public class AudioManager : MonoBehaviour
     {
         musicSource.volume = volume;
 
-        // salveaz? volumul
+        
         PlayerPrefs.SetFloat("MusicVolume", volume);
     }
 
@@ -29,4 +29,3 @@ public class AudioManager : MonoBehaviour
         return musicSource.volume;
     }
 }
-

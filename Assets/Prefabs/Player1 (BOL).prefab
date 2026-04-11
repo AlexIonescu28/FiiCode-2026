@@ -158,8 +158,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   otherRigidbody: {fileID: 2033519414022829619, guid: b14a66aa50799754e88be1bd849480a7, type: 3}
-  animator: {fileID: 8259198378857988504}
-  animator2: {fileID: 0}
 --- !u!58 &707624351291361145
 CircleCollider2D:
   m_ObjectHideFlags: 0

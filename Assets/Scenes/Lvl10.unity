@@ -2109,6 +2109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BossHealth
   maxHealth: 3
   currentHealth: 0
+  animatorboss: {fileID: 880473193}
   healthBar: {fileID: 776106902}
   isVulnerable: 0
   postHitStunTime: 4
@@ -2118,7 +2119,6 @@ MonoBehaviour:
   - {fileID: 2022795367}
   - {fileID: 1994613674}
   - {fileID: 493594095}
-  animatorboss: {fileID: 880473193}
 --- !u!114 &880473190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4069,7 +4069,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2033519414022829618, guid: b14a66aa50799754e88be1bd849480a7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.5
+      value: 0.55
       objectReference: {fileID: 0}
     - target: {fileID: 2033519414022829618, guid: b14a66aa50799754e88be1bd849480a7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4787,8 +4787,16 @@ PrefabInstance:
       value: BossVerticalWall
       objectReference: {fileID: 0}
     - target: {fileID: 7735635661018744568, guid: 9d1bd1e0b91da3044a979c41a95fefc9, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7735635661018744568, guid: 9d1bd1e0b91da3044a979c41a95fefc9, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7735635661018744568, guid: 9d1bd1e0b91da3044a979c41a95fefc9, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 8376579500731760987, guid: 9d1bd1e0b91da3044a979c41a95fefc9, type: 3}
       propertyPath: m_LocalPosition.x

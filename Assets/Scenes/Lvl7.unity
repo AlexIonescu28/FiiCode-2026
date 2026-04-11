@@ -282,6 +282,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2157502035642827543, guid: 9d1bd1e0b91da3044a979c41a95fefc9, type: 3}
+      propertyPath: m_Size.y
+      value: 8.551443
+      objectReference: {fileID: 0}
+    - target: {fileID: 2157502035642827543, guid: 9d1bd1e0b91da3044a979c41a95fefc9, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.13868809
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497188499841329124, guid: 9d1bd1e0b91da3044a979c41a95fefc9, type: 3}
+      propertyPath: speed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6497188499841329124, guid: 9d1bd1e0b91da3044a979c41a95fefc9, type: 3}
       propertyPath: sinkDistance
       value: 6.2
@@ -2023,7 +2035,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2033519414022829618, guid: b14a66aa50799754e88be1bd849480a7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.5
+      value: 0.55
       objectReference: {fileID: 0}
     - target: {fileID: 2033519414022829618, guid: b14a66aa50799754e88be1bd849480a7, type: 3}
       propertyPath: m_LocalRotation.w

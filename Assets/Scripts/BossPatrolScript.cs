@@ -21,13 +21,13 @@ public class BossPatrolScript : MonoBehaviour
 
     void Update()
     {
-        // Direc?ia spre punctul ?int?
+       
         float direction = Mathf.Sign(targetPoint.position.x - transform.position.x);
 
-        // Mi?care
+      
         enemyRigidBody.linearVelocity = new Vector2(direction * speed, 0);
 
-        // Dac? boss-ul a trecut de punct, schimb? direc?ia
+      
         if (direction > 0 && transform.position.x >= pointB.position.x)
         {
             targetPoint = pointA;

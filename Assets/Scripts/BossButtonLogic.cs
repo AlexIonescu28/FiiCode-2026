@@ -17,7 +17,7 @@ public class BossButtonLogic : MonoBehaviour
     public UnityEvent pressed;
     public UnityEvent notPressed;
 
-    // 🔥 Obiectul pe care îl tragi în Inspector
+    
     public Rigidbody2D objectToDrop;
 
     void Start()
@@ -40,12 +40,12 @@ public class BossButtonLogic : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        // Orice obiect apasă butonul
+       
         isPressed = true;
         collisionCount++;
         pressed.Invoke();
 
-        // 🔥 Când butonul este apăsat → obiectul cade
+      
         if (objectToDrop != null)
         {
             objectToDrop.bodyType = RigidbodyType2D.Dynamic;
