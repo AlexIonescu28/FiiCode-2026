@@ -470,8 +470,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Tutorial
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6c81a1400409f114abf4edf5335ab012, type: 2}
+  m_sharedMaterial: {fileID: -7438397145133908024, guid: 6c81a1400409f114abf4edf5335ab012, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -771,8 +771,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Quit
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6c81a1400409f114abf4edf5335ab012, type: 2}
+  m_sharedMaterial: {fileID: -7438397145133908024, guid: 6c81a1400409f114abf4edf5335ab012, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1298,8 +1298,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Play
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6c81a1400409f114abf4edf5335ab012, type: 2}
+  m_sharedMaterial: {fileID: -7438397145133908024, guid: 6c81a1400409f114abf4edf5335ab012, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1497,8 +1497,20 @@ PrefabInstance:
       value: 26.02
       objectReference: {fileID: 0}
     - target: {fileID: 2788951917418598304, guid: 1a802b0cc5ecd02489c034c7cab1d3e2, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+    - target: {fileID: 2788951917418598304, guid: 1a802b0cc5ecd02489c034c7cab1d3e2, type: 3}
       propertyPath: m_fontSizeBase
       value: 26.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 2788951917418598304, guid: 1a802b0cc5ecd02489c034c7cab1d3e2, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+    - target: {fileID: 2788951917418598304, guid: 1a802b0cc5ecd02489c034c7cab1d3e2, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2980011154541229613, guid: 1a802b0cc5ecd02489c034c7cab1d3e2, type: 3}
       propertyPath: m_AnchorMax.x
