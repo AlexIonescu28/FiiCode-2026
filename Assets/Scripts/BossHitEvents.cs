@@ -11,6 +11,7 @@ public class BossHitEvents : MonoBehaviour
     [Header("Hit 2")]
     public GameObject[] hideOnHit2;   // BossDestructibleObject2
     public GameObject[] showOnHit2;   // BossDestructibleObject3
+    
 
     public void RegisterHit()
     {
@@ -19,6 +20,7 @@ public class BossHitEvents : MonoBehaviour
         if (hitCount == 1)
         {
             HandleHit1();
+            
         }
         else if (hitCount == 2)
         {
@@ -26,7 +28,7 @@ public class BossHitEvents : MonoBehaviour
         }
         else if (hitCount == 3)
         {
-            // faza 3 dacă vrei
+            
         }
     }
 
@@ -37,6 +39,7 @@ public class BossHitEvents : MonoBehaviour
 
         foreach (GameObject obj in showOnHit1)
             if (obj != null) obj.SetActive(true);
+        
     }
 
     private void HandleHit2()

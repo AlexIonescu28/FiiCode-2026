@@ -9,46 +9,46 @@ public class Attack : MonoBehaviour
     public LayerMask enemies;
     public LayerMask destructibleObjects;
     public LayerMask bossLayer;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Animator animator2;
 
-    // Update is called once per frame
+    
+    public float attackDuration = 0.5f;
+
     void Update()
     {
         if (Input.GetButtonDown("Fire2"))
         {
-            Attacking(); 
-
+            
+            StartCoroutine(AttackRoutine());
         }
     }
 
-    void Attacking()
+    
+    IEnumerator AttackRoutine()
     {
+        
+        animator2.SetBool("Attack", true);
+
+        
         Collider2D[] taged = Physics2D.OverlapCircleAll(attackPoint.position, radius, enemies);
         Collider2D[] destroyed = Physics2D.OverlapCircleAll(attackPoint.position, radius, destructibleObjects);
         Collider2D[] hits = Physics2D.OverlapCircleAll(attackPoint.position, radius);
+
         foreach (Collider2D enemy in taged)
         {
             Destroy(enemy.gameObject);
-
-            
             Debug.Log("Inamicul " + enemy.name + " a fost distrus instantaneu!");
         }
 
         foreach (Collider2D objects in destroyed)
         {
             Destroy(objects.gameObject);
-
-
             Debug.Log("Obiectul " + objects.name + " a fost distrus instantaneu!");
         }
 
         foreach (Collider2D hit in hits)
         {
-            if (hit.CompareTag("boss")) // exact cum apare în Inspector
+            if (hit.CompareTag("boss"))
             {
                 BossHealth bh = hit.GetComponent<BossHealth>();
                 if (bh != null)
@@ -59,6 +59,11 @@ public class Attack : MonoBehaviour
             }
         }
 
+        
+        yield return new WaitForSeconds(0.5f);
+
+        
+        animator2.SetBool("Attack", false);
     }
 
     private void OnDrawGizmos()

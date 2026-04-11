@@ -10,6 +10,7 @@ public class Movement2 : MonoBehaviour
     private SpriteRenderer sprite;
     private CircleCollider2D coll;
     private Vector3 initialScale;
+    public Animator animator2;
 
     public bool isFacingRight = true;
 
@@ -33,11 +34,16 @@ public class Movement2 : MonoBehaviour
         float directionX = Input.GetAxisRaw("Horizontal2");
 
         myRigidbody.linearVelocity = new Vector2(directionX * 4, myRigidbody.linearVelocity.y);
-
+        animator2.SetFloat("Speed2", Mathf.Abs(myRigidbody.linearVelocity.x));
         if (Input.GetButtonDown("Jump2") && GroundCheck())
         {
             myRigidbody.linearVelocity = new Vector2(myRigidbody.linearVelocity.x, 4f);
             myRigidbody.linearVelocity = new Vector2(myRigidbody.linearVelocity.x, 4f);
+            animator2.SetBool("IsJumping2", true);
+        }
+        else
+        {
+            animator2.SetBool("IsJumping2", false);
         }
 
         UpdateAnimationUpdate(directionX);

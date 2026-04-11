@@ -7,6 +7,7 @@ public class BossHealth : MonoBehaviour
 {
     public int maxHealth = 100;
     public int currentHealth;
+    public Animator animatorboss;
 
     public HealthBar healthBar;
 
@@ -34,6 +35,7 @@ public class BossHealth : MonoBehaviour
         if (collision.CompareTag("Trap"))
         {
             isVulnerable = true;
+            animatorboss.SetBool("Knocked", true);
 
             Destroy(collision.gameObject);
 
@@ -55,6 +57,7 @@ public class BossHealth : MonoBehaviour
             patrol.enabled = true;
 
         isVulnerable = false;
+        animatorboss.SetBool("Knocked", false);
     }
 
     public void TakeDamage(int damage)

@@ -138,6 +138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myRigidbody: {fileID: 2033519414022829619}
+  animator2: {fileID: 5502872590158663240}
   isFacingRight: 1
   jumpableGround:
     serializedVersion: 2
@@ -169,6 +170,7 @@ MonoBehaviour:
   bossLayer:
     serializedVersion: 2
     m_Bits: 0
+  animator2: {fileID: 5502872590158663240}
 --- !u!114 &2033519414022829622
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -182,6 +184,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   otherRigidbody: {fileID: 2808145907035424680, guid: 67b2b182463066747bc3acc5bd857f46, type: 3}
+  animator: {fileID: 0}
+  animator2: {fileID: 5502872590158663240}
 --- !u!58 &3143778615507103733
 CircleCollider2D:
   m_ObjectHideFlags: 0

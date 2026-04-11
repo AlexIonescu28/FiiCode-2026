@@ -7,62 +7,38 @@ public class Health : MonoBehaviour
 {
     private Rigidbody2D myRigidbody;
     public Rigidbody2D otherRigidbody;
-    // Start is called before the first frame update
+    public Animator animator;
+    public Animator animator2;
+
     void Start()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
-       
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Trap"))
+        if (collision.gameObject.CompareTag("Trap") || 
+            collision.gameObject.CompareTag("Enemy") || 
+            collision.gameObject.CompareTag("Projectile") || 
+            collision.gameObject.CompareTag("boss"))
         {
             Die();
-            RestartLevel();
-        }
-
-        if (collision.gameObject.CompareTag("Enemy"))
-        {
-            Die();
-            RestartLevel();
-        }
-
-        if (collision.gameObject.CompareTag("Projectile"))
-        {
-            Die();
-            RestartLevel();
-        }
-        if (collision.gameObject.CompareTag("boss"))
-        {
-            Die();
-            RestartLevel();
+            StartCoroutine(RestartLevelWithDelay(2f));
         }
     }
 
     private void Die()
     {
-        
-        //myRigidbody.bodyType = RigidbodyType2D.Static;
-
         if (myRigidbody.gameObject.name == "Player1")
         {
             myRigidbody.GetComponent<Movement>().enabled = false;
+            animator.SetTrigger("Death");
         }
         else if (myRigidbody.gameObject.name == "Player2") 
         {
             myRigidbody.GetComponent<Movement2>().enabled = false;
+            animator2.SetTrigger("Death2");
         }
-
-       
-        //otherRigidbody.bodyType = RigidbodyType2D.Static;
 
         if (otherRigidbody.gameObject.name == "Player1")
         {
@@ -72,12 +48,11 @@ public class Health : MonoBehaviour
         {
             otherRigidbody.GetComponent<Movement2>().enabled = false;
         }
-
-        // anim.SetTrigger("death"); 
     }
 
-    private void RestartLevel()
+    private IEnumerator RestartLevelWithDelay(float delay)
     {
+        yield return new WaitForSeconds(delay);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
