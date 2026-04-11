@@ -563,6 +563,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Arici
       objectReference: {fileID: 0}
+    - target: {fileID: 4040257987999559261, guid: 482cb995bbd430846b878e0c4101c723, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4668732297726182515, guid: 482cb995bbd430846b878e0c4101c723, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.36
