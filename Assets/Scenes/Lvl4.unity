@@ -1438,8 +1438,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5330790155019793323, guid: 832b4b93c690cb04598f795df9c53568, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1774773641}
+    - target: {fileID: 5330790155019793323, guid: 832b4b93c690cb04598f795df9c53568, type: 3}
       propertyPath: m_RenderMode
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5330790155019793323, guid: 832b4b93c690cb04598f795df9c53568, type: 3}
+      propertyPath: m_PixelPerfect
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5330790155019793323, guid: 832b4b93c690cb04598f795df9c53568, type: 3}
       propertyPath: m_SortingOrder
@@ -1451,7 +1459,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5729777155246754215, guid: 832b4b93c690cb04598f795df9c53568, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -6.3999634
+      value: -8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
