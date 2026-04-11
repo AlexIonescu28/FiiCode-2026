@@ -978,15 +978,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 707624351291361145, guid: 67b2b182463066747bc3acc5bd857f46, type: 3}
       propertyPath: m_Radius
-      value: 0.69579995
+      value: 0.6654545
       objectReference: {fileID: 0}
     - target: {fileID: 707624351291361145, guid: 67b2b182463066747bc3acc5bd857f46, type: 3}
       propertyPath: m_Offset.x
-      value: -0.10143471
+      value: 0.00063610077
       objectReference: {fileID: 0}
     - target: {fileID: 707624351291361145, guid: 67b2b182463066747bc3acc5bd857f46, type: 3}
       propertyPath: m_Offset.y
-      value: -0.16949308
+      value: -0.35708225
       objectReference: {fileID: 0}
     - target: {fileID: 2808145907035424676, guid: 67b2b182463066747bc3acc5bd857f46, type: 3}
       propertyPath: com
