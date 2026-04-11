@@ -3,4 +3,6 @@ FiiCode aria gamedev 2026
 
 Numele echipei: BOL 
 
-Membrii echipei BOL: Anea Vladimir Andrei, Ioana Sanduleanu Eugenia, Alexandru Dragos Ionescu
+Membrii echipei: Anea Vladimir Andrei, Ioana Sanduleanu Eugenia, Alexandru Dragos Ionescu
+
+
