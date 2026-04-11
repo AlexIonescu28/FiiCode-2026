@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 5616474858387195898}
   - component: {fileID: 5616474858387195901}
   - component: {fileID: 5616474858387195900}
+  - component: {fileID: 8992685193270657109}
   m_Layer: 8
   m_Name: FlyingEnemy
   m_TagString: Enemy
@@ -161,8 +162,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.26238453, y: -0.16713715}
-  m_Radius: 0.79919624
+  m_Offset: {x: 0.14624095, y: -0.16713715}
+  m_Radius: 0.7654773
 --- !u!50 &5616474858387195898
 Rigidbody2D:
   serializedVersion: 5
@@ -222,3 +223,25 @@ MonoBehaviour:
   projectile: {fileID: 6956462608548684662, guid: 3af2e6a4315e09a4886b48badf1988d1, type: 3}
   spawnTime: 2
   launchPoint: {fileID: 5616474857378597117}
+--- !u!95 &8992685193270657109
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5616474858387195894}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1343079f8e6005040a3c1b24b38fe4c1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

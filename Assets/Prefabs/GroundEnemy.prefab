@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4349485122776955106}
   - component: {fileID: 1394173131672302213}
   - component: {fileID: 6783780617421310589}
+  - component: {fileID: 823305713404204206}
   m_Layer: 8
   m_Name: GroundEnemy
   m_TagString: Enemy
@@ -173,8 +174,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.19451672, y: -0.004310869}
-  m_Size: {x: 1.1392509, y: 1.4814818}
+  m_Offset: {x: -0.16035557, y: -0.0043108463}
+  m_Size: {x: 1.1422215, y: 1.4814818}
   m_Direction: 0
 --- !u!70 &6783780617421310589
 CapsuleCollider2D:
@@ -213,3 +214,25 @@ CapsuleCollider2D:
   m_Offset: {x: -0.00000006461454, y: -0.5346011}
   m_Size: {x: 2.4200006, y: 0.4594315}
   m_Direction: 1
+--- !u!95 &823305713404204206
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4349485122776955110}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a3daa9708939e3841b50507e76504d4c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

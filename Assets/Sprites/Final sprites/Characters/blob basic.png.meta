@@ -103,12 +103,12 @@ TextureImporter:
       name: blob basic_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 49
-        width: 242
-        height: 152
+        x: 0
+        y: 0
+        width: 246
+        height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 49c03bd9d6bfd4541b0f5dd490269bde
     internalID: 0
     vertices: []
     indices: 

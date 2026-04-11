@@ -103,12 +103,12 @@ TextureImporter:
       name: arici sleeping_0
       rect:
         serializedVersion: 2
-        x: 54
-        y: 69
-        width: 152
-        height: 112
+        x: 0
+        y: 0
+        width: 250
+        height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: af6ec31266f9fb64994c226cdf2bb6df
     internalID: 0
     vertices: []
     indices: 
