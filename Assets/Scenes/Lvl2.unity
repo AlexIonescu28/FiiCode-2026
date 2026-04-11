@@ -476,7 +476,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4328624003175366276, guid: ac1edf644a3285c4b9f913619ad7bfe3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 4328624003175366276, guid: ac1edf644a3285c4b9f913619ad7bfe3, type: 3}
       propertyPath: m_LocalRotation.w
@@ -506,6 +506,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4328624003175366277, guid: ac1edf644a3285c4b9f913619ad7bfe3, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4328624003175366277, guid: ac1edf644a3285c4b9f913619ad7bfe3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8625041402099463092, guid: a0cf4c7cc0c630943ba0b1bc5eb4d426, type: 3}
     - target: {fileID: 4328624003175366279, guid: ac1edf644a3285c4b9f913619ad7bfe3, type: 3}
       propertyPath: pressed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1878,7 +1886,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5464906167441389531, guid: e7a50f2ee207f96429de0183dd20ecc2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 5464906167441389531, guid: e7a50f2ee207f96429de0183dd20ecc2, type: 3}
       propertyPath: m_LocalRotation.w
