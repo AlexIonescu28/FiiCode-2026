@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -18,6 +19,7 @@ public class BossHealth : MonoBehaviour
 
     private bool isInPostHitStun = false;  // boss-ul a fost lovit și e în cooldown
     public GameObject objectToSpawnOnDeath;
+    public GameObject[] lootItems;
     void Start()
     {
         currentHealth = maxHealth;
@@ -73,10 +75,23 @@ public class BossHealth : MonoBehaviour
         if (currentHealth <= 0)
         {
             if (objectToSpawnOnDeath != null)
-                Instantiate(objectToSpawnOnDeath, transform.position, Quaternion.identity);
+            {
+                for (int i = 0; i < 3; i++)
+                {
+                    Vector3 offset = new Vector3(
+                        UnityEngine.Random.Range(-1f, 1f),
+                        UnityEngine.Random.Range(-1f, 1f),
+                        0
+                    );
+
+                    Instantiate(objectToSpawnOnDeath, transform.position + offset, Quaternion.identity);
+                }
+            }
 
             Destroy(gameObject);
         }
+
+
     }
 
     IEnumerator PostHitStun(float duration)
