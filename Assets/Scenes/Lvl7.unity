@@ -290,6 +290,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BossVerticalWall
       objectReference: {fileID: 0}
+    - target: {fileID: 7735635661018744568, guid: 9d1bd1e0b91da3044a979c41a95fefc9, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7735635661018744568, guid: 9d1bd1e0b91da3044a979c41a95fefc9, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 8376579500731760987, guid: 9d1bd1e0b91da3044a979c41a95fefc9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.28
@@ -845,7 +853,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4328624003175366276, guid: ac1edf644a3285c4b9f913619ad7bfe3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.98
+      value: -2.12
       objectReference: {fileID: 0}
     - target: {fileID: 4328624003175366276, guid: ac1edf644a3285c4b9f913619ad7bfe3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1385,7 +1393,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1009642158187743682, guid: d20b583d7a0bde14299f592e4b0ecf73, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.54
+      value: 2.81
       objectReference: {fileID: 0}
     - target: {fileID: 1009642158187743682, guid: d20b583d7a0bde14299f592e4b0ecf73, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2051,7 +2059,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4328624003175366276, guid: ac1edf644a3285c4b9f913619ad7bfe3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.587042
+      value: -4.66
       objectReference: {fileID: 0}
     - target: {fileID: 4328624003175366276, guid: ac1edf644a3285c4b9f913619ad7bfe3, type: 3}
       propertyPath: m_LocalPosition.z
