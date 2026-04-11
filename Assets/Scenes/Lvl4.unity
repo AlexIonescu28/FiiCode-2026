@@ -1449,6 +1449,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 5729777155246754215, guid: 832b4b93c690cb04598f795df9c53568, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -6.3999634
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 5330790153202855905, guid: 832b4b93c690cb04598f795df9c53568, type: 3}
@@ -1744,7 +1748,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.08
+  orthographic size: 7
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
