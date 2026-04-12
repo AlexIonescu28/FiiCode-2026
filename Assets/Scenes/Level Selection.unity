@@ -795,7 +795,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MenuAudioManager
   musicSource: {fileID: 637989524}
   SFXSource: {fileID: 637989523}
-  background: {fileID: 8300000, guid: c51720dd1936b884f8a7df233499fde5, type: 3}
+  background: {fileID: 8300000, guid: bb267ffa6ddbe214fa61b74581bfd841, type: 3}
 --- !u!1 &680236872
 GameObject:
   m_ObjectHideFlags: 0

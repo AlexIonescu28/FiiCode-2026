@@ -1336,7 +1336,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MenuAudioManager
   musicSource: {fileID: 1860277718}
   SFXSource: {fileID: 1950818960}
-  background: {fileID: 8300000, guid: c51720dd1936b884f8a7df233499fde5, type: 3}
+  background: {fileID: 8300000, guid: bb267ffa6ddbe214fa61b74581bfd841, type: 3}
 --- !u!82 &1860277718 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 8133639623201282337, guid: 869703a58b3e5204e88b631de5f67626, type: 3}
