@@ -65,4 +65,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lvl11.unity
     guid: 786b7901233c668469b82a1733623e3c
+  - enabled: 1
+    path: Assets/Scenes/RecordTime 1.unity
+    guid: fceeed97863086042aa3845369ebc831
   m_configObjects: {}
