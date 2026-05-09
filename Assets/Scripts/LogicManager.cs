@@ -20,6 +20,8 @@ public class LogicManager : MonoBehaviour
         SceneManager.LoadSceneAsync(0);
     }
 
-    
-
+    public void LevelSelection2()
+    {
+        SceneManager.LoadSceneAsync(14);
+    }
 }

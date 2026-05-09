@@ -47,4 +47,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RecordTime.unity
     guid: afdcad9765892404aa5da6520136395e
+  - enabled: 1
+    path: Assets/Scenes/Level Selection 2.unity
+    guid: 28e194c5ae55696458fbf72b66229919
+  - enabled: 1
+    path: Assets/Scenes/Lvl15.unity
+    guid: 5d4cc5512996f8f44a0b182acc7b589d
+  - enabled: 1
+    path: Assets/Scenes/Lvl14.unity
+    guid: d0b003a73594a2e4e8c2eceae0688d4f
+  - enabled: 1
+    path: Assets/Scenes/Lvl13.unity
+    guid: 8d9eecd61127ea241b0fce39fe93e56d
+  - enabled: 1
+    path: Assets/Scenes/Lvl12.unity
+    guid: e18a5d51de6c65b44a3ea3fda45d3570
+  - enabled: 1
+    path: Assets/Scenes/Lvl11.unity
+    guid: 786b7901233c668469b82a1733623e3c
   m_configObjects: {}
