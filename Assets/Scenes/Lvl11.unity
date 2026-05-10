@@ -183,6 +183,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
   otherRigidbody: {fileID: 1738373254}
+--- !u!95 &188170758
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188170751}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 77c44066c3cf1c44cb98a9999fcc9295, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &194573649
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4337,6 +4359,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4257448039906805107, guid: 9d727a8619bb1d54f8b2df66da64c693, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1738373257}
+    - targetCorrespondingSourceObject: {fileID: 4257448039906805107, guid: 9d727a8619bb1d54f8b2df66da64c693, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1738373258}
   m_SourcePrefab: {fileID: 100100000, guid: 9d727a8619bb1d54f8b2df66da64c693, type: 3}
 --- !u!1 &416772466
 GameObject:
@@ -4567,7 +4592,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &503343977
 Transform:
   m_ObjectHideFlags: 0
@@ -6870,6 +6895,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3869209922302463045, guid: 54a746eb4a5034d42bd18f7d50b8db65, type: 3}
       insertIndex: -1
       addedObject: {fileID: 188170757}
+    - targetCorrespondingSourceObject: {fileID: 3869209922302463045, guid: 54a746eb4a5034d42bd18f7d50b8db65, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 188170758}
   m_SourcePrefab: {fileID: 100100000, guid: 54a746eb4a5034d42bd18f7d50b8db65, type: 3}
 --- !u!1001 &1675019500
 PrefabInstance:
@@ -7207,6 +7235,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
   otherRigidbody: {fileID: 188170754}
+--- !u!95 &1738373258
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738373251}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 11e47d51b850ccc43857992ab45d8531, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1746545091
 PrefabInstance:
   m_ObjectHideFlags: 0
