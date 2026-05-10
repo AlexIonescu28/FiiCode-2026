@@ -18,24 +18,39 @@ public class Portal2Logic : MonoBehaviour
     public GameObject jucator1Mol;
     public GameObject jucator2Mol;
 
+    [Header("Spawn Post-Teleport")]
+    public GameObject spawnPoint; 
+
     private void OnTriggerEnter2D(Collider2D other)
     {
        
         if (other.CompareTag("Player"))
         {
-            
+           
             if (bolVerse != null) bolVerse.SetActive(true);
             if (cameraBolVerse != null) cameraBolVerse.SetActive(true);
-            if (jucator1Bol != null) jucator1Bol.SetActive(true);
-            if (jucator2Bol != null) jucator2Bol.SetActive(true);
 
            
+            if (jucator1Bol != null && spawnPoint != null)
+            {
+                jucator1Bol.SetActive(true);
+               
+                jucator1Bol.transform.position = spawnPoint.transform.position;
+            }
+
+            if (jucator2Bol != null && spawnPoint != null)
+            {
+                jucator2Bol.SetActive(true);
+                jucator2Bol.transform.position = spawnPoint.transform.position;
+            }
+
+          
             if (molVerse != null) molVerse.SetActive(false);
             if (cameraMolVerse != null) cameraMolVerse.SetActive(false);
             if (jucator1Mol != null) jucator1Mol.SetActive(false);
             if (jucator2Mol != null) jucator2Mol.SetActive(false);
 
-            Debug.Log("Ne-am întors în BolVerse!");
+            Debug.Log("Teleportare reusita la SpawnPoint in BolVerse!");
         }
     }
 }
