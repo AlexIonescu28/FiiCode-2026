@@ -217,6 +217,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: arrow_0
       objectReference: {fileID: 0}
+    - target: {fileID: 364838615762363966, guid: ea993446dacdef74fb4b331e92b822d3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1332087670907165657, guid: ea993446dacdef74fb4b331e92b822d3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.181
@@ -7377,6 +7381,10 @@ PrefabInstance:
     - target: {fileID: 4443079920708928942, guid: 38acca00bc0995541b7f5856a439c38d, type: 3}
       propertyPath: m_Name
       value: arrowDispenser_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4443079920708928942, guid: 38acca00bc0995541b7f5856a439c38d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
