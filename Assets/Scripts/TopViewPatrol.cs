@@ -48,22 +48,22 @@ public class TopViewPatrol : MonoBehaviour
         }
 
 
-        if (Vector2.Distance(transform.position, currentPosition.position) < 0.5f && currentPosition == pointB.transform)
+        if (Vector2.Distance(transform.position, currentPosition.position) < 0.2f && currentPosition == pointB.transform)
         {
             currentPosition = pointC.transform;
         }
 
-        if (Vector2.Distance(transform.position, currentPosition.position) < 0.5f && currentPosition == pointC.transform)
+        if (Vector2.Distance(transform.position, currentPosition.position) < 0.2f && currentPosition == pointC.transform)
         {
             currentPosition = pointD.transform;
         }
 
-        if (Vector2.Distance(transform.position, currentPosition.position) < 0.5f && currentPosition == pointD.transform)
+        if (Vector2.Distance(transform.position, currentPosition.position) < 0.2f && currentPosition == pointD.transform)
         {
             currentPosition = pointA.transform;
         }
 
-        if (Vector2.Distance(transform.position, currentPosition.position) < 0.5f && currentPosition == pointA.transform)
+        if (Vector2.Distance(transform.position, currentPosition.position) < 0.2f && currentPosition == pointA.transform)
         {
             currentPosition = pointB.transform;
         }
