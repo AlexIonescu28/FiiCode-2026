@@ -20,5 +20,7 @@ Throughout all the levels, whether they are in the hand-drawn or the pixel dimen
 •	The technical implementation of the system: 
 When creating the hand-drawn dimension, we were faced with a dilemma: how do we do that as efficiently as possible? And solution that we came up with was having 2 unity cinemachine cameras (one being the pixel world and the other the hand-drawn dimension) and switching between them when one of the players passes trough the portal. As for the “pixel dimension” it was made using unity tilemaps.
 
+Video de prezentare finala: https://youtu.be/4V0PRdAvYto
+
 
 
