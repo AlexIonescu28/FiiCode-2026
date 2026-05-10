@@ -10,6 +10,7 @@ Sources Playlist: https://www.youtube.com/watch?v=Uv5tfMSKlnU&list=PLu8ukQIVkEbh
 Video de prezentare: https://www.youtube.com/watch?v=VhIOXN8bRoM
 
 Finala FiiCode 09-05-2026:
+
 •	The core idea of the mechanic
 The core idea is that by travelling through a portal you get transported to the dimension of the hand-drawn character (his name is mol). Our inspiration is that we realized that all the objects and enemies are in the style of the pixel character (his name is bol). The best way to fix that is by introducing a dimension in which bol feels like an intruder.
 
