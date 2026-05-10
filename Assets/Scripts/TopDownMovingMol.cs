@@ -7,7 +7,7 @@ public class TopDownMovingMol : MonoBehaviour
     public float speed = 0.5f;
     private Rigidbody2D rb;
     private Vector2 input;
-
+    public CollectibleObjectManager com;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -30,7 +30,14 @@ public class TopDownMovingMol : MonoBehaviour
 
         input.Normalize();
     }
-
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("collectible object"))
+        {
+            Destroy(other.gameObject);
+            com.ObjectCounter++;
+        }
+    }
     void FixedUpdate()
     {
         rb.linearVelocity = input * speed;
